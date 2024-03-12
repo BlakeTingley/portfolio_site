@@ -60,16 +60,31 @@ nav a{
 
   /* Homepage styles */
 
+  body{
+    background-image: url('../img/gradient_background.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+
   #homebody{
     background-image: url("../img/homebg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
   }
 
 
   /* Section Styles */
+
+  section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
   /* Form Styles */
 
