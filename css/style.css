@@ -19,12 +19,23 @@
   }
   input, button, textarea, select {
     font: inherit;
+    background-color: #FFA0A0;
   }
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
   #root, #__next {
     isolation: isolate;
+  }
+
+  /* main styles */
+
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
   }
 
   /* header styles */
@@ -41,6 +52,7 @@ header a.home_button{
     color: black;
     text-decoration: none;
     font-size: 16px;
+    font-family: sans-serif;
 }
 
 nav{
@@ -54,6 +66,7 @@ nav a{
     text-decoration: none;
     font-size: 16px;
     margin: 0% 3%;
+    font-family: sans-serif;
 }
 
   /* end header styles */
@@ -65,7 +78,6 @@ nav a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  
   }
 
   #homebody{
@@ -75,8 +87,23 @@ nav a{
     background-size: cover;
   }
 
+  #homesection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0%;
+  }
 
-  /* Section Styles */
+  #homesection h1{
+    color: #FFF;
+    font-size: 60px;
+    margin-left: -50%;
+    font-family: sans-serif;
+  }
+
+  /* Section Styles 
 
   section{
     display: flex;
@@ -86,7 +113,82 @@ nav a{
     flex-wrap: wrap;
   }
 
+  */
+
+  /* About */
+
+  #aboutsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E0D3DE;
+    width: 80%;
+  }
+
+  #abouttext{
+    font-family: sans-serif;
+  }
+
+  /* Contact */
+
+  #contactsection{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E0D3DE;
+    width: 80%;
+    margin-top: 10%;
+    padding: 12%;
+  }
+
+  #contactsection{
+    font-family: sans-serif;
+  }
+
+  /* Portfolio */
+
+  #portfoliotext{
+    font-family: sans-serif;
+  }
+
+  #workgrid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+  }
+
+  #workgrid a{
+    width: 35%;
+  }
+
+  #workgrid img{
+    width: 100%;
+    margin: 10%;
+
+  }
+
   /* Form Styles */
+
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+  }
+
+  .centerme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+ 
 
   /* Media Queries */
 
