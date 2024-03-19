@@ -1,42 +1,63 @@
 /* Start writing your CSS */
+
 /*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
+  1. Use a more-intuitive box-sizing model.
 */
 *, *::before, *::after {
-    box-sizing: border-box;
-  }
-  * {
-    margin: 0;
-  }
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  input, button, textarea, select {
-    font: inherit;
-    background-color: #FFA0A0;
-  }
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  #root, #__next {
-    isolation: isolate;
-  }
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
 
-  /* main styles */
+/* Main styles */
 
-  section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-  }
+body{
+  background: url('../img/gradient_background.jpg') center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  font-family: sans-serif;
+}
 
   /* header styles */
   
@@ -69,16 +90,7 @@ nav a{
     font-family: sans-serif;
 }
 
-  /* end header styles */
-
   /* Homepage styles */
-
-  body{
-    background-image: url('../img/gradient_background.jpg') ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
   #homebody{
     background-image: url("../img/homebg.jpg");
@@ -103,17 +115,23 @@ nav a{
     font-family: sans-serif;
   }
 
-  /* Section Styles 
-
-  section{
+  .centerme{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    top: 45%;
   }
 
-  */
+  .homecenterme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+  }
 
   /* About */
 
@@ -121,35 +139,60 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    position: absolute;
     background-color: #E0D3DE;
     width: 80%;
+    margin: 0 auto;
+    top: 30%;
+    left: 10%;
+    padding: 10%;
   }
 
   #abouttext{
-    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
   }
 
   /* Contact */
 
   #contactsection{
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: #E0D3DE;
+    margin: 0 auto;
+    position: absolute;
     width: 80%;
-    margin-top: 10%;
+    background-color: #E0D3DE;
     padding: 12%;
+    top: 30%;
+    left: 10%;
   }
 
-  #contactsection{
-    font-family: sans-serif;
+  .contactcenterme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
   }
+
 
   /* Portfolio */
 
   #portfoliotext{
     font-family: sans-serif;
+  }
+
+  #worksection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
   }
 
   #workgrid{
@@ -168,8 +211,20 @@ nav a{
   #workgrid img{
     width: 100%;
     margin: 10%;
-
   }
+
+  .portfoliocenterme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+ .portfoliocenterme img {
+  width: 30%;
+ } 
+
 
   /* Form Styles */
 
@@ -181,12 +236,8 @@ nav a{
     width: 400px;
   }
 
-  .centerme{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
+
+
 
  
 
