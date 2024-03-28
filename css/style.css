@@ -206,7 +206,7 @@ nav a {
   top: 30%;
 }
 
-.centerform{
+.centerform {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -297,19 +297,19 @@ form {
     top: 30%;
     left: 10%;
     height: 32vw;
-}
-  
-.portfoliocenterme img{
-  width: 35%;
-}
+  }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  right: 30px;
-}
+  .portfoliocenterme img {
+    width: 35%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 30px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -325,8 +325,8 @@ nav {
     top: 30%;
     left: 10%;
     height: 35vw;
-}
-  
+  }
+
 }
 
 /* Large devices (desktops, less than 1024px) */
@@ -345,7 +345,7 @@ nav {
     left: 10%;
   }
 
-  .portfoliocenterme img{
+  .portfoliocenterme img {
     width: 45%;
   }
 
@@ -355,13 +355,13 @@ nav {
     align-items: center;
     position: relative;
     right: 30px;
-}
+  }
 
   #homesection h1 {
     margin-left: -40%;
   }
 
- 
+
 }
 
 /* Medium devices (tablets, less than 744px) */
@@ -380,7 +380,7 @@ nav {
     left: 10%;
   }
 
-  .portfoliocenterme img{
+  .portfoliocenterme img {
     width: 50%;
   }
 
@@ -430,7 +430,7 @@ nav {
     left: 2%;
   }
 
-  .portfoliocenterme img{
+  .portfoliocenterme img {
     width: 35%;
   }
 
